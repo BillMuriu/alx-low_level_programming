@@ -1,18 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main - Entry point
+ * main - Program entry point
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success. Error code otherwise
  */
 int main(void)
 {
-char low;
+char a = a;
+int n = 0;
 
-for (low = a; low <= z; low++)
-putchar(low);
-printf("\n");
-
+while (n < 26)
+{
+putchar(a);
+a++;
+n++;
+}
+putchar(n);
 return (0);
 }
