@@ -1,50 +1,25 @@
 #include <stdio.h>
-
+/**
+ * main - Program entry point
+ *
+ * Return: 0 on success. Error code otherwise
+ */
 int main(void)
 {
-    char ch = 'a';
-	while(ch <= 'z')
+	int tm = 'a';
+
+	while (tm <= 'z')
 	{
-		if (ch != 'e' && ch != 'q')
+		if (tm == 'e' || tm == 'q')
 		{
-			putchar(ch);
+			tm++;
 		}
-		ch++;
-	}
-	putchar('\n');
-
-    return 0;
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-    
-	for (char ch = 'a'; ch <= 'z'; ch++)
-	{
-		if (ch != 'e' && ch != 'q')
+		else
 		{
-			putchar(ch);
+			putchar(tm);
+			tm++;
 		}
 	}
 	putchar('\n');
-
-    return 0;
+	return (0);
 }
-
-int main(void)
-{
-    
-	for (char ch ='a'; ch <= 'z'; ch++)
-	{
-		if (ch == 'e' || ch == 'q')
-		    ch++;
-		putchar(ch);
-		
-	}
-	putchar('\n');
-
-    return 0;
-}
-
