@@ -1,21 +1,23 @@
 #include <stdio.h>
 /**
- * main - Program entry point
- *
- * Return: 0 on success. Error code otherwise
+ *main - Program entry point
+ *Return:0 on success. Error code otherwise
  */
 int main(void)
 {
-    
-	for (int i = 0; i <= 9; i++)
+	int n = 48;
+	int com = 44;
+
+	while (n <= 57)
 	{
-		putchar(i + '0');
-		if (i != 9) {
-		    putchar(',');
-		    putchar(' ');
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(com);
+			putchar(32);
 		}
+		n++;
 	}
 	putchar('\n');
-
-    return 0;
+	return (0);
 }
