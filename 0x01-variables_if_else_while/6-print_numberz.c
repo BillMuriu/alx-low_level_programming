@@ -1,18 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - Program entry point
+ * Return: 0 on success. Error code otherwise
  */
 int main(void)
 {
-	int d;
+	int n = 48;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-		putchar('\n');
-
+	while (n <= 57)
+	{
+		putchar(n);
+		n++;
+	}
+	putchar('\n');
 	return (0);
 }
