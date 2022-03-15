@@ -1,23 +1,21 @@
 #include <stdio.h>
-
+/**
+*main - Program entry point
+*Return:0 on success. Error code otherwise
+*/
 int main(void)
 {
-    char ch = 'a';
-    int i = 0;
-    
-	while (i < 16)
+	int n;
+	char ch;
+
+	for (n = 48; n < 58; n++)
 	{
-		if (i < 10)
-		{
-			putchar(i + '0');
-		}
-		else
-		{
-		    putchar(ch);
-		    ch++;
-		}
-		i++;
+		putchar(n);
+	}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
 	}
 	putchar('\n');
-    return 0;
+	return (0);
 }
