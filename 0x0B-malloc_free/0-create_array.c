@@ -1,24 +1,28 @@
-#include "holberton.h"
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * create_array - allocate space for an array
- * @size:unssigned int
- * @c:char
- * Return:char
+ * create_array - a function to dynamically create an array size of size
+ * @size: the size of an array
+ * @c: a character to memset the memory address
+ * Return: if dynamically allocation successfully allocated
+ * it returns the char pointer to the first address else it return Null
  */
 char *create_array(unsigned int size, char c)
 {
+	char *p;
+	unsigned int i;
 
-        unsigned int i;
-        char *x;
-
-        if (size == 0)
-                return (NULL);
-        x = malloc(size * sizeof(char));
-        if (x == NULL)
-        {
-                return (NULL);
-        }
+	if (size == 0)
+		return (NULL);
+	p = (char *)malloc(sizeof(char) * size);
+	if (p == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		p[i] =  c;
+	}
+	return (p);
 }
